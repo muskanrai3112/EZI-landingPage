@@ -21,7 +21,7 @@ button {
   outline: none;
 }
 .container {
-  max-width: 1100px;
+  max-width: 1600px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -32,22 +32,39 @@ button {
 }
 .banner-content {
   position: relative;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
 }
 .banner-content::before {
   content: "";
   background-image: url(../assets/images/girlImg.png);
   position: absolute;
-  left: -115px;
+  left: -76px;
   background-size: contain;
   background-repeat: no-repeat;
+  top: 40px;
   height: 100%;
   width: 100%;
 }
 .banner {
   width: 100%;
-  background: linear-gradient(174deg, #ffff00 65%, #063852 35%);
-  /* background: #ffff00; */
+  /* background: linear-gradient(174deg, #ffff00 65%, #063852 35%); */
+  background: #ffff00;
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  background-image: url(../assets/images/eziBackgroundImg.svg);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  z-index: 1;
 }
 .banner-body {
   display: flex;
@@ -63,8 +80,10 @@ button {
 .banner-form {
   background-color: #fff;
   border-radius: 10px;
-  padding: 55px 40px;
+  padding: 35px 45px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  width: 40%;
 }
 .form-title {
   font-size: 16px;
@@ -96,7 +115,7 @@ button {
 }
 
 .banner-titles {
-  margin-top: 137px;
+  margin-top: 40px;
 }
 .banner-title {
   font-size: 64px;
